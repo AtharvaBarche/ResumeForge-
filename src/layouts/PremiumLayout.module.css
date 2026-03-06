@@ -1,0 +1,40 @@
+.layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.main {
+  display: flex;
+  flex: 1;
+  min-height: 0;
+}
+
+.main > * {
+  flex: 1;
+  min-width: 0;
+  min-height: 0;
+}
+
+.workspace {
+  flex: 0 0 70%;
+  min-width: 0;
+  overflow: auto;
+  padding: 1rem 1.5rem;
+  border-right: 1px solid var(--premium-border);
+}
+
+.buildPanel {
+  flex: 0 0 30%;
+  min-width: 0;
+  overflow: auto;
+  padding: 1rem 1.5rem;
+  background: var(--premium-surface);
+}
+
+.fullWidth {
+  flex: 1;
+  min-width: 0;
+  overflow: auto;
+  padding: 1rem 1.5rem;
+}

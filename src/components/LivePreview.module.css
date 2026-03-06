@@ -1,0 +1,322 @@
+.preview {
+  padding: 1rem;
+  background: var(--shell-bg, var(--premium-surface));
+  border-radius: 8px;
+  border: 1px solid var(--shell-border, var(--premium-border));
+  min-height: 400px;
+}
+
+.previewInner {
+  background: var(--shell-header-bg, var(--premium-bg));
+  padding: 1.5rem;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  color: var(--shell-text, var(--premium-text));
+  border: 1px solid var(--shell-border, var(--premium-border));
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--shell-border, var(--premium-border));
+}
+
+.name {
+  margin: 0 0 0.35rem 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--shell-text, var(--premium-text));
+}
+
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem 1rem;
+  color: var(--shell-text-muted, var(--premium-muted));
+  font-size: 0.8rem;
+}
+
+.linksRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+  font-size: 0.85rem;
+}
+
+.section {
+  margin-bottom: 1rem;
+}
+
+.sectionTitle {
+  margin: 0 0 0.35rem 0;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--shell-text-muted, var(--premium-muted));
+}
+
+.summary {
+  margin: 0;
+  font-size: 0.85rem;
+  line-height: 1.4;
+  color: var(--shell-text, var(--premium-text));
+}
+
+.item {
+  margin-bottom: 0.75rem;
+}
+
+.itemHead {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 0.5rem;
+}
+
+.itemSub {
+  font-size: 0.8rem;
+  color: var(--shell-text-muted, var(--premium-muted));
+  margin-top: 0.15rem;
+}
+
+.desc {
+  margin: 0.25rem 0 0 0;
+  font-size: 0.8rem;
+  line-height: 1.35;
+  color: var(--shell-text-muted, var(--premium-muted));
+}
+
+.link {
+  color: var(--resume-accent, var(--premium-accent));
+  font-size: 0.8rem;
+}
+
+.skillGroups {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.skillGroup {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.skillGroupLabel {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--shell-text-muted, var(--premium-muted));
+  margin-right: 0.5rem;
+}
+
+.skillPills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+}
+
+.skillPill {
+  padding: 0.15rem 0.4rem;
+  background: var(--shell-border, var(--premium-surface));
+  border-radius: 4px;
+  font-size: 0.75rem;
+  color: var(--shell-text, var(--premium-text));
+}
+
+.projectCards {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.projectCard {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid var(--shell-border, var(--premium-border));
+}
+
+.projectCard:last-child {
+  border-bottom: none;
+}
+
+.projectCardHead {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.projectLinks {
+  display: flex;
+  gap: 0.25rem;
+}
+
+.linkIcon {
+  font-size: 0.85rem;
+  color: var(--resume-accent, var(--premium-accent));
+  text-decoration: none;
+}
+
+.techPills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+  margin-top: 0.35rem;
+}
+
+.techPill {
+  padding: 0.1rem 0.35rem;
+  background: var(--shell-border, var(--premium-surface));
+  border-radius: 3px;
+  font-size: 0.7rem;
+  color: var(--shell-text-muted, var(--premium-muted));
+}
+
+.placeholder {
+  margin: 2rem 0 0 0;
+  text-align: center;
+  color: var(--shell-text-muted, var(--premium-muted));
+  font-size: 0.9rem;
+}
+
+/* Template: Classic — serif, traditional */
+.preview[data-template="classic"] .previewInner {
+  font-family: Georgia, 'Times New Roman', serif;
+}
+
+.preview[data-template="classic"] .sectionTitle {
+  border-bottom: 1px solid var(--shell-border, var(--premium-border));
+  padding-bottom: 0.2rem;
+}
+
+/* Template: Modern — sans, more spacing */
+.preview[data-template="modern"] .previewInner {
+  font-family: system-ui, -apple-system, sans-serif;
+  letter-spacing: 0.01em;
+}
+
+.preview[data-template="modern"] .section {
+  margin-bottom: 1.25rem;
+}
+
+.preview[data-template="modern"] .sectionTitle {
+  letter-spacing: 0.06em;
+}
+
+/* Template: Minimal — compact */
+.preview[data-template="minimal"] .previewInner {
+  font-family: system-ui, -apple-system, sans-serif;
+  padding: 1rem;
+  font-size: 0.8rem;
+}
+
+.preview[data-template="minimal"] .section {
+  margin-bottom: 0.6rem;
+}
+
+.preview[data-template="minimal"] .sectionTitle {
+  font-size: 0.7rem;
+}
+
+.preview[data-template="minimal"] .item {
+  margin-bottom: 0.4rem;
+}
+
+/* Template: Executive — generous whitespace, accent line, professional */
+.preview[data-template="executive"] .previewInner {
+  font-family: Georgia, 'Times New Roman', serif;
+  padding: 2rem;
+  font-size: 0.9rem;
+}
+
+.preview[data-template="executive"] .header {
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.25rem;
+}
+
+.preview[data-template="executive"] .name {
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.preview[data-template="executive"] .section {
+  margin-bottom: 1.5rem;
+}
+
+.preview[data-template="executive"] .sectionTitle {
+  font-family: system-ui, -apple-system, sans-serif;
+  font-size: 0.7rem;
+  border-bottom: 2px solid var(--resume-accent, var(--shell-accent, var(--premium-accent)));
+  padding-bottom: 0.35rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Template: Compact — dense, fit more on one page */
+.preview[data-template="compact"] .previewInner {
+  font-family: system-ui, -apple-system, sans-serif;
+  padding: 0.85rem 1rem;
+  font-size: 0.75rem;
+}
+
+.preview[data-template="compact"] .header {
+  margin-bottom: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.preview[data-template="compact"] .name {
+  font-size: 1rem;
+}
+
+.preview[data-template="compact"] .section {
+  margin-bottom: 0.5rem;
+}
+
+.preview[data-template="compact"] .sectionTitle {
+  font-size: 0.65rem;
+  margin-bottom: 0.2rem;
+}
+
+.preview[data-template="compact"] .item {
+  margin-bottom: 0.35rem;
+}
+
+.preview[data-template="compact"] .desc,
+.preview[data-template="compact"] .summary {
+  font-size: 0.75rem;
+}
+
+.preview[data-template="compact"] .contact {
+  font-size: 0.7rem;
+}
+
+/* Template: Bold — strong typography, accent underlines */
+.preview[data-template="bold"] .previewInner {
+  font-family: system-ui, -apple-system, sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+.preview[data-template="bold"] .name {
+  font-size: 1.35rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.preview[data-template="bold"] .sectionTitle {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  border-bottom: 3px solid var(--resume-accent, var(--shell-accent, var(--premium-accent)));
+  padding-bottom: 0.35rem;
+  margin-bottom: 0.5rem;
+}
+
+.preview[data-template="bold"] .itemHead strong {
+  font-weight: 700;
+}

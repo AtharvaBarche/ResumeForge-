@@ -1,0 +1,25 @@
+.wrapper {
+  padding: 2rem 1.5rem;
+}
+
+.title {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--shell-text, var(--premium-text));
+}
+
+.placeholder {
+  margin: 0;
+  color: var(--shell-text-muted, var(--premium-muted));
+  font-size: 0.95rem;
+}
+
+.link {
+  color: var(--shell-accent, var(--premium-accent));
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}

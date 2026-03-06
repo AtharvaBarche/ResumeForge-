@@ -1,0 +1,185 @@
+.section {
+  margin-bottom: 1.5rem;
+}
+
+.sectionHead {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.sectionTitle {
+  margin: 0;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--shell-text, var(--premium-text));
+}
+
+.addBtn {
+  padding: 0.25rem 0.6rem;
+  font-size: 0.85rem;
+  background: transparent;
+  border: 1px solid var(--shell-border, var(--premium-border));
+  border-radius: 6px;
+  color: var(--shell-text-muted, var(--premium-muted));
+  cursor: pointer;
+}
+
+.addBtn:hover {
+  color: var(--shell-text, var(--premium-text));
+  border-color: var(--shell-text, var(--premium-text));
+}
+
+.accordionItem {
+  border: 1px solid var(--shell-border, var(--premium-border));
+  border-radius: 6px;
+  margin-bottom: 0.5rem;
+  overflow: hidden;
+}
+
+.accordionHeader {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 0.75rem;
+  background: var(--shell-header-bg, var(--premium-surface));
+  border: none;
+  color: var(--shell-text, var(--premium-text));
+  font-size: 0.9rem;
+  cursor: pointer;
+  text-align: left;
+}
+
+.accordionHeader:hover {
+  background: var(--shell-border, var(--premium-border));
+}
+
+.accordionTitle {
+  font-weight: 500;
+}
+
+.accordionChevron {
+  font-size: 0.7rem;
+  color: var(--shell-text-muted, var(--premium-muted));
+}
+
+.accordionBody {
+  padding: 0.75rem;
+  background: var(--shell-bg, var(--premium-bg));
+  border-top: 1px solid var(--shell-border, var(--premium-border));
+}
+
+.input {
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  margin-bottom: 0.5rem;
+  background: var(--shell-input-bg, var(--premium-surface));
+  border: 1px solid var(--shell-border, var(--premium-border));
+  border-radius: 6px;
+  color: var(--shell-text, var(--premium-text));
+  font-size: 0.9rem;
+}
+
+.input:focus {
+  outline: none;
+  border-color: var(--shell-accent, var(--premium-accent));
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.15);
+}
+
+.textarea {
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  margin-bottom: 0.25rem;
+  background: var(--shell-input-bg, var(--premium-surface));
+  border: 1px solid var(--shell-border, var(--premium-border));
+  border-radius: 6px;
+  color: var(--shell-text, var(--premium-text));
+  font-size: 0.9rem;
+  resize: vertical;
+}
+
+.textarea:focus {
+  outline: none;
+  border-color: var(--shell-accent, var(--premium-accent));
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.15);
+}
+
+.label {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--shell-text-muted, var(--premium-muted));
+  margin-bottom: 0.25rem;
+}
+
+.charCount {
+  display: block;
+  font-size: 0.75rem;
+  color: var(--shell-text-muted, var(--premium-muted));
+  margin-bottom: 0.5rem;
+}
+
+.techRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.2rem 0.4rem;
+  background: var(--shell-header-bg, var(--premium-surface));
+  border: 1px solid var(--shell-border, var(--premium-border));
+  border-radius: 4px;
+  font-size: 0.8rem;
+  color: var(--shell-text, var(--premium-text));
+}
+
+.pillRemove {
+  padding: 0 0.15rem;
+  background: none;
+  border: none;
+  color: var(--shell-text-muted, var(--premium-muted));
+  cursor: pointer;
+  font-size: 1rem;
+  line-height: 1;
+}
+
+.pillRemove:hover {
+  color: var(--premium-error);
+}
+
+.tagInput {
+  min-width: 80px;
+  padding: 0.2rem 0.4rem;
+  font-size: 0.8rem;
+  background: var(--shell-input-bg, var(--premium-surface));
+  border: 1px solid var(--shell-border, var(--premium-border));
+  border-radius: 6px;
+  color: var(--shell-text, var(--premium-text));
+}
+
+.tagInput:focus {
+  outline: none;
+  border-color: var(--shell-accent, var(--premium-accent));
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.15);
+}
+
+.deleteBtn {
+  margin-top: 0.5rem;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.8rem;
+  background: none;
+  border: none;
+  color: var(--shell-text-muted, var(--premium-muted));
+  cursor: pointer;
+}
+
+.deleteBtn:hover {
+  color: var(--premium-error);
+}

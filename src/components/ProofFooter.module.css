@@ -1,0 +1,29 @@
+.footer {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1.5rem;
+  background: var(--premium-surface);
+  border-top: 1px solid var(--premium-border);
+  flex-shrink: 0;
+}
+
+.link {
+  color: var(--premium-accent);
+  text-decoration: none;
+  font-size: 0.85rem;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.sep {
+  color: var(--premium-muted);
+  font-size: 0.85rem;
+}
+
+.label {
+  color: var(--premium-muted);
+  font-size: 0.8rem;
+}

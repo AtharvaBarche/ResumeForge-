@@ -1,0 +1,41 @@
+.wrapper {
+  margin-bottom: 1rem;
+}
+
+.label {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--shell-text-muted, var(--premium-muted));
+  margin-bottom: 0.35rem;
+}
+
+.circles {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.circle {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 2px solid var(--shell-border, var(--premium-border));
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.1s, border-color 0.15s;
+}
+
+.circle:hover {
+  transform: scale(1.1);
+  border-color: var(--shell-text, var(--premium-text));
+}
+
+.check {
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-shadow: 0 0 1px #000;
+}

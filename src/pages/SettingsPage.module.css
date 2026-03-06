@@ -1,0 +1,194 @@
+.wrapper {
+  padding: 2rem 1.5rem;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.title {
+  margin: 0 0 1.5rem 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--shell-text, var(--premium-text));
+}
+
+.section {
+  margin-bottom: 2rem;
+  padding: 1.25rem;
+  background: var(--shell-header-bg, var(--premium-surface));
+  border: 1px solid var(--shell-border, var(--premium-border));
+  border-radius: 8px;
+}
+
+.sectionTitle {
+  margin: 0 0 1rem 0;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--shell-text, var(--premium-text));
+}
+
+.sectionDesc {
+  margin: 0 0 1rem 0;
+  font-size: 0.9rem;
+  color: var(--shell-text-muted, var(--premium-muted));
+  line-height: 1.45;
+}
+
+.field {
+  margin-bottom: 1.25rem;
+}
+
+.field:last-of-type {
+  margin-bottom: 0;
+}
+
+.label {
+  display: block;
+  margin-bottom: 0.4rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--shell-text, var(--premium-text));
+}
+
+.select {
+  width: 100%;
+  max-width: 240px;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.9rem;
+  background: var(--shell-input-bg, var(--premium-surface));
+  border: 1px solid var(--shell-border, var(--premium-border));
+  border-radius: 6px;
+  color: var(--shell-text, var(--premium-text));
+  cursor: pointer;
+}
+
+.select:focus {
+  outline: none;
+  border-color: var(--shell-accent, var(--premium-accent));
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.15);
+}
+
+.radioRow {
+  display: flex;
+  gap: 1.25rem;
+  margin-top: 0.35rem;
+}
+
+.radioLabel {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.9rem;
+  color: var(--shell-text, var(--premium-text));
+  cursor: pointer;
+}
+
+.radio {
+  width: 1rem;
+  height: 1rem;
+  accent-color: var(--shell-accent, var(--premium-accent));
+  cursor: pointer;
+}
+
+.colorRow {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-top: 0.35rem;
+}
+
+.colorBtn {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 2px solid var(--shell-border, var(--premium-border));
+  cursor: pointer;
+  padding: 0;
+  position: relative;
+  transition: border-color 0.15s, transform 0.15s;
+}
+
+.colorBtn:hover {
+  border-color: var(--shell-text-muted, var(--premium-muted));
+  transform: scale(1.08);
+}
+
+.colorCheck {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+}
+
+.buttonRow {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.btnSecondary {
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  background: var(--shell-bg, var(--premium-bg));
+  border: 1px solid var(--shell-border, var(--premium-border));
+  border-radius: 6px;
+  color: var(--shell-text, var(--premium-text));
+  cursor: pointer;
+  align-self: flex-start;
+  transition: border-color 0.15s, color 0.15s;
+}
+
+.btnSecondary:hover {
+  border-color: var(--shell-accent, var(--premium-accent));
+  color: var(--shell-accent, var(--premium-accent));
+}
+
+.btnDanger {
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  background: transparent;
+  border: 1px solid var(--premium-error);
+  border-radius: 6px;
+  color: var(--premium-error);
+  cursor: pointer;
+  align-self: flex-start;
+}
+
+.btnDanger:hover {
+  background: rgba(248, 81, 73, 0.1);
+}
+
+.clearBlock {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.btnCancel {
+  padding: 0.4rem 0.75rem;
+  font-size: 0.85rem;
+  background: transparent;
+  border: none;
+  border-radius: 6px;
+  color: var(--shell-text-muted, var(--premium-muted));
+  cursor: pointer;
+}
+
+.btnCancel:hover {
+  color: var(--shell-text, var(--premium-text));
+}
+
+.aboutText {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--shell-text-muted, var(--premium-muted));
+  line-height: 1.5;
+}
+
+.aboutText strong {
+  color: var(--shell-text, var(--premium-text));
+}

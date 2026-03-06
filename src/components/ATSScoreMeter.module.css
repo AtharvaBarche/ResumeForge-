@@ -1,0 +1,71 @@
+.wrapper {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  background: var(--shell-bg, var(--premium-surface));
+  border: 1px solid var(--shell-border, var(--premium-border));
+  border-radius: 8px;
+}
+
+.label {
+  margin: 0 0 0.5rem 0;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--shell-text, var(--premium-text));
+}
+
+.meterWrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.meterBg {
+  flex: 1;
+  height: 8px;
+  background: var(--shell-border, var(--premium-bg));
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.meterFill {
+  height: 100%;
+  background: var(--resume-accent, var(--shell-accent, var(--premium-accent)));
+  border-radius: 4px;
+  transition: width 0.2s ease;
+}
+
+.scoreValue {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--shell-text, var(--premium-text));
+  min-width: 2ch;
+}
+
+.improvementsTitle {
+  margin: 0.75rem 0 0.35rem 0;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--shell-text, var(--premium-text));
+}
+
+.improvements {
+  margin: 0;
+  padding-left: 1.25rem;
+  font-size: 0.8rem;
+  color: var(--shell-text-muted, var(--premium-muted));
+  line-height: 1.5;
+}
+
+.improvementItem {
+  margin-bottom: 0.25rem;
+}
+
+.improvementItem:last-child {
+  margin-bottom: 0;
+}
+
+.points {
+  color: var(--shell-text-muted, var(--premium-muted));
+  font-size: 0.75rem;
+}

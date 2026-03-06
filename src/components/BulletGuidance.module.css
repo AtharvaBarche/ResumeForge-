@@ -1,0 +1,13 @@
+.wrapper {
+  margin-top: 0.25rem;
+  font-size: 0.75rem;
+  color: var(--premium-muted);
+}
+
+.hint {
+  font-style: italic;
+}
+
+.sep {
+  margin: 0 0.25rem;
+}

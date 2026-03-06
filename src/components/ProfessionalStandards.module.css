@@ -1,0 +1,65 @@
+.wrapper {
+  margin-bottom: 1rem;
+  background: var(--shell-bg, var(--premium-surface));
+  border: 1px solid var(--shell-border, var(--premium-border));
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.trigger {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.6rem 1rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--shell-text, var(--premium-text));
+  text-align: left;
+}
+
+.trigger:hover {
+  background: rgba(0, 0, 0, 0.04);
+}
+
+.triggerIcon {
+  font-size: 0.65rem;
+  color: var(--shell-text-muted, var(--premium-muted));
+}
+
+.triggerText {
+  flex: 1;
+}
+
+.list {
+  margin: 0;
+  padding: 0 1rem 1rem 1rem;
+  list-style: none;
+  border-top: 1px solid var(--shell-border, var(--premium-border));
+}
+
+.item {
+  padding: 0.5rem 0 0 0;
+  font-size: 0.8rem;
+  line-height: 1.45;
+  color: var(--shell-text-muted, var(--premium-muted));
+}
+
+.item:first-child {
+  padding-top: 0.75rem;
+}
+
+.itemTitle {
+  display: block;
+  margin-bottom: 0.2rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--shell-text, var(--premium-text));
+}
+
+.itemDetail {
+  display: block;
+}

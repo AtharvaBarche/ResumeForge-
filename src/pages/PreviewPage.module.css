@@ -1,0 +1,393 @@
+/* Minimal black + white layout — no colors */
+.page {
+  padding: 2rem;
+  max-width: 720px;
+  margin: 0 auto;
+  background: var(--premium-bg);
+  color: var(--premium-text);
+  min-height: 100%;
+}
+
+.toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.exportActions {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.exportBtn {
+  padding: 0.5rem 0.75rem;
+  font-size: 0.85rem;
+  background: var(--premium-surface);
+  border: 1px solid var(--premium-border);
+  border-radius: 6px;
+  color: var(--premium-text);
+  cursor: pointer;
+}
+
+.exportBtn:hover {
+  border-color: var(--premium-accent);
+  color: var(--premium-accent);
+}
+
+.atsBlock {
+  margin-bottom: 1rem;
+}
+
+.warningBanner {
+  margin-bottom: 1rem;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.85rem;
+  color: var(--premium-muted);
+  background: var(--premium-surface);
+  border: 1px solid var(--premium-border);
+  border-radius: 6px;
+}
+
+.toast {
+  position: fixed;
+  bottom: 1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0.6rem 1rem;
+  font-size: 0.9rem;
+  background: var(--premium-surface);
+  border: 1px solid var(--premium-accent);
+  border-radius: 8px;
+  color: var(--premium-text);
+  z-index: 1000;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.projectLinks {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.techStack {
+  margin: 0.25rem 0 0 0;
+  font-size: 0.85rem;
+  color: var(--premium-muted);
+}
+
+.resume {
+  font-family: 'Georgia', 'Times New Roman', serif;
+  font-size: 11pt;
+  line-height: 1.4;
+  background: #fff;
+  color: #111;
+  padding: 2rem;
+  border-radius: 4px;
+}
+
+.resume[data-template="classic"] {
+  font-family: Georgia, 'Times New Roman', serif;
+}
+
+.resume[data-template="classic"] .sectionTitle {
+  border-bottom: 1px solid #111;
+  padding-bottom: 0.2rem;
+}
+
+.resume[data-template="modern"] {
+  font-family: system-ui, -apple-system, sans-serif;
+  letter-spacing: 0.01em;
+}
+
+.resume[data-template="modern"] .section {
+  margin-bottom: 1.25rem;
+}
+
+.resume[data-template="modern"] .sectionTitle {
+  letter-spacing: 0.06em;
+}
+
+.resume[data-template="minimal"] {
+  font-family: system-ui, -apple-system, sans-serif;
+  font-size: 10pt;
+  padding: 1.5rem;
+}
+
+.resume[data-template="minimal"] .section {
+  margin-bottom: 0.6rem;
+}
+
+.resume[data-template="minimal"] .sectionTitle {
+  font-size: 9pt;
+}
+
+.resume[data-template="minimal"] .item {
+  margin-bottom: 0.4rem;
+}
+
+/* Executive — generous whitespace, accent line */
+.resume[data-template="executive"] {
+  font-family: Georgia, 'Times New Roman', serif;
+  padding: 2.25rem;
+  font-size: 11pt;
+}
+
+.resume[data-template="executive"] .header {
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.25rem;
+}
+
+.resume[data-template="executive"] .name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.resume[data-template="executive"] .section {
+  margin-bottom: 1.25rem;
+}
+
+.resume[data-template="executive"] .sectionTitle {
+  font-family: system-ui, -apple-system, sans-serif;
+  font-size: 9pt;
+  border-bottom: 2px solid var(--resume-accent, #111);
+  padding-bottom: 0.35rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Compact — dense, fit more on one page */
+.resume[data-template="compact"] {
+  font-family: system-ui, -apple-system, sans-serif;
+  font-size: 9pt;
+  padding: 1.25rem;
+}
+
+.resume[data-template="compact"] .header {
+  margin-bottom: 0.6rem;
+  padding-bottom: 0.5rem;
+}
+
+.resume[data-template="compact"] .name {
+  font-size: 1.1rem;
+}
+
+.resume[data-template="compact"] .section {
+  margin-bottom: 0.5rem;
+}
+
+.resume[data-template="compact"] .sectionTitle {
+  font-size: 8pt;
+  margin-bottom: 0.2rem;
+}
+
+.resume[data-template="compact"] .item {
+  margin-bottom: 0.35rem;
+}
+
+.resume[data-template="compact"] .desc,
+.resume[data-template="compact"] .summary {
+  font-size: 9pt;
+}
+
+.resume[data-template="compact"] .contact {
+  font-size: 8pt;
+}
+
+/* Bold — strong typography, accent underlines */
+.resume[data-template="bold"] {
+  font-family: system-ui, -apple-system, sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+.resume[data-template="bold"] .name {
+  font-size: 1.4rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.resume[data-template="bold"] .sectionTitle {
+  font-size: 10pt;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  border-bottom: 3px solid var(--resume-accent, #111);
+  padding-bottom: 0.35rem;
+  margin-bottom: 0.5rem;
+}
+
+.resume[data-template="bold"] .itemHead strong {
+  font-weight: 700;
+}
+
+/* Layout precision: no overlap, consistent spacing, no overflow */
+.page {
+  overflow-x: hidden;
+}
+
+.resume {
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
+.section {
+  break-inside: avoid;
+}
+
+.item {
+  break-inside: avoid;
+}
+
+.desc,
+.summary,
+.skills {
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
+/* Print: resume only, white, clean margins, no cut-off */
+@media print {
+  .page {
+    padding: 0 !important;
+    margin: 0 !important;
+    max-width: none !important;
+    background: #fff !important;
+    color: #111 !important;
+  }
+
+  .resume {
+    padding: 0.75in !important;
+    margin: 0 !important;
+    max-width: none !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+    background: #fff !important;
+    color: #111 !important;
+  }
+
+  .resume a {
+    color: #111 !important;
+    text-decoration: underline;
+  }
+
+  .section {
+    margin-bottom: 1rem;
+    page-break-inside: avoid;
+  }
+
+  .item {
+    page-break-inside: avoid;
+    margin-bottom: 0.75rem;
+  }
+
+  .sectionTitle {
+    page-break-after: avoid;
+  }
+
+  .header {
+    page-break-after: avoid;
+  }
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 1.25rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #111;
+}
+
+.name {
+  margin: 0 0 0.4rem 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0 1rem;
+  font-size: 10pt;
+  color: #333;
+}
+
+.contact span + span::before {
+  content: ' · ';
+}
+
+.linksRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 1rem;
+  font-size: 10pt;
+}
+
+.link {
+  color: #111;
+  text-decoration: underline;
+}
+
+.link:hover {
+  text-decoration: none;
+}
+
+.section {
+  margin-bottom: 1rem;
+}
+
+.sectionTitle {
+  margin: 0 0 0.4rem 0;
+  font-size: 10pt;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.summary {
+  margin: 0;
+  font-size: 11pt;
+}
+
+.item {
+  margin-bottom: 0.75rem;
+}
+
+.itemHead {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 0.5rem;
+}
+
+.itemHead strong {
+  font-weight: 700;
+}
+
+.date {
+  font-size: 10pt;
+  color: #333;
+  white-space: nowrap;
+}
+
+.itemSub {
+  font-size: 10pt;
+  color: #333;
+  margin-top: 0.15rem;
+}
+
+.desc {
+  margin: 0.3rem 0 0 0;
+  font-size: 10pt;
+  color: #333;
+  line-height: 1.35;
+}
+
+.skills {
+  margin: 0;
+  font-size: 10pt;
+  color: #333;
+}

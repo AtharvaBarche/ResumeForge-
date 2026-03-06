@@ -1,0 +1,82 @@
+.wrapper {
+  padding: 2rem 1.5rem;
+  max-width: 560px;
+}
+
+.title {
+  margin: 0 0 1.5rem 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--shell-text, var(--premium-text));
+}
+
+.readinessSection {
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background: var(--shell-header-bg, var(--premium-surface));
+  border: 1px solid var(--shell-border, var(--premium-border));
+  border-radius: 8px;
+}
+
+.sectionTitle {
+  margin: 0 0 0.5rem 0;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--shell-text-muted, var(--premium-muted));
+}
+
+.overallScore {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--shell-accent, var(--premium-accent));
+  line-height: 1;
+}
+
+.overallLabel {
+  margin: 0.25rem 0 0 0;
+  font-size: 0.85rem;
+  color: var(--shell-text-muted, var(--premium-muted));
+}
+
+.breakdown {
+  padding: 1rem 0;
+}
+
+.scoreList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.scoreItem {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  padding: 0.4rem 0;
+  border-bottom: 1px solid var(--shell-border, var(--premium-border));
+}
+
+.scoreItem:last-child {
+  border-bottom: none;
+}
+
+.scoreLabel {
+  flex: 1;
+  min-width: 140px;
+  font-size: 0.9rem;
+  color: var(--shell-text, var(--premium-text));
+}
+
+.scoreWeight {
+  font-size: 0.8rem;
+  color: var(--shell-text-muted, var(--premium-muted));
+}
+
+.scoreValue {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--shell-text, var(--premium-text));
+  min-width: 2.5ch;
+  text-align: right;
+}

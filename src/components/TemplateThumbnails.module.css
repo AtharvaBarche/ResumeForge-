@@ -1,0 +1,147 @@
+.wrapper {
+  margin-bottom: 1rem;
+}
+
+.label {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--shell-text-muted, var(--premium-muted));
+  margin-bottom: 0.35rem;
+}
+
+.thumbnails {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.thumb {
+  width: 120px;
+  padding: 0.5rem;
+  background: var(--shell-bg, var(--premium-surface));
+  border: 2px solid var(--shell-border, var(--premium-border));
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.35rem;
+  transition: border-color 0.15s;
+}
+
+.thumb:hover {
+  border-color: var(--shell-text-muted, var(--premium-muted));
+}
+
+.thumbActive {
+  border-color: var(--shell-accent, var(--premium-accent)) !important;
+  position: relative;
+}
+
+.thumbSketch {
+  width: 100%;
+  height: 56px;
+  background: var(--shell-header-bg, var(--premium-bg));
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  padding: 4px;
+  gap: 3px;
+}
+
+.thumbSketch[data-template="classic"] {
+  justify-content: center;
+}
+
+.thumbSketch[data-template="classic"] .sketchLine {
+  height: 4px;
+  background: var(--shell-border, var(--premium-border));
+  border-radius: 2px;
+  width: 100%;
+}
+
+.thumbSketch[data-template="modern"] {
+  flex-direction: row;
+}
+
+.sketchSidebar {
+  width: 28%;
+  background: var(--resume-accent, var(--shell-accent, var(--premium-accent)));
+  opacity: 0.4;
+  border-radius: 2px;
+}
+
+.sketchMain {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  justify-content: center;
+}
+
+.sketchMain .sketchLine {
+  height: 3px;
+  background: var(--shell-border, var(--premium-border));
+  border-radius: 2px;
+  width: 100%;
+}
+
+.thumbSketch[data-template="minimal"] .sketchLineMinimal {
+  height: 3px;
+  background: var(--shell-border, var(--premium-border));
+  border-radius: 2px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.thumbLabel {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--shell-text, var(--premium-text));
+}
+
+.checkmark {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  font-size: 0.7rem;
+  color: var(--resume-accent, var(--shell-accent, var(--premium-accent)));
+  font-weight: 700;
+}
+
+.sketchLine {
+  height: 4px;
+  background: var(--shell-border, var(--premium-border));
+  border-radius: 2px;
+  width: 100%;
+}
+
+.sketchLineMinimal {
+  height: 3px;
+  background: var(--shell-border, var(--premium-border));
+  border-radius: 2px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.sketchLineAccent {
+  height: 2px;
+  background: var(--resume-accent, var(--shell-accent, var(--premium-accent)));
+  border-radius: 2px;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.sketchLineCompact {
+  height: 2px;
+  background: var(--shell-border, var(--premium-border));
+  border-radius: 1px;
+  width: 100%;
+}
+
+.sketchBoldBar {
+  height: 5px;
+  background: var(--resume-accent, var(--shell-accent, var(--premium-accent)));
+  border-radius: 2px;
+  width: 100%;
+}

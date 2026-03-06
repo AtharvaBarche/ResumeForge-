@@ -1,0 +1,207 @@
+.wrapper {
+  min-height: 100%;
+  background: linear-gradient(to right, var(--shell-bg) 0%, var(--shell-bg) 55%, rgba(37, 99, 235, 0.04) 100%);
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 2rem 4rem;
+  min-height: calc(100vh - 180px);
+}
+
+.heroContent {
+  flex: 1;
+  max-width: 560px;
+}
+
+.headline {
+  margin: 0 0 1rem 0;
+  font-size: clamp(2rem, 4.5vw, 3rem);
+  font-weight: 700;
+  line-height: 1.15;
+  color: var(--shell-text);
+  letter-spacing: -0.02em;
+}
+
+.highlight {
+  color: var(--shell-accent);
+}
+
+.subtext {
+  margin: 0 0 1.75rem 0;
+  font-size: 1.05rem;
+  line-height: 1.5;
+  color: var(--shell-text-muted);
+  max-width: 28rem;
+}
+
+.ctaLine {
+  margin: 0;
+  font-size: 1rem;
+  color: var(--shell-text-muted);
+}
+
+.ctaLink {
+  color: var(--shell-accent);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.ctaLink:hover {
+  text-decoration: underline;
+}
+
+.heroVisual {
+  position: relative;
+  flex: 0 0 320px;
+  min-height: 280px;
+}
+
+.visualCard {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  padding: 0.85rem 1rem;
+  background: var(--shell-header-bg);
+  border-radius: 12px;
+  box-shadow: var(--shell-card-shadow);
+  border: 1px solid var(--shell-border);
+}
+
+.visualCard:nth-child(1) {
+  top: 0;
+  right: 20%;
+}
+
+.visualCard:nth-child(2) {
+  top: 45%;
+  right: 0;
+}
+
+.cardIcon {
+  font-size: 1.25rem;
+}
+
+.cardTitle {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--shell-text);
+}
+
+.cardSub {
+  font-size: 0.8rem;
+  color: var(--shell-text-muted);
+}
+
+.candidateBubble {
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: var(--shell-header-bg);
+  border-radius: 999px;
+  box-shadow: var(--shell-card-shadow);
+  border: 1px solid var(--shell-border);
+}
+
+.bubbleAvatars {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--shell-accent);
+  letter-spacing: 0.05em;
+}
+
+.bubbleText {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--shell-text);
+}
+
+.trust {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 2rem 3rem;
+  border-top: 1px solid var(--shell-border);
+}
+
+.trustLabel {
+  font-size: 0.9rem;
+  color: var(--shell-text-muted);
+  font-weight: 500;
+}
+
+.trustLogos {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.trustItem {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--shell-text-muted);
+  padding: 0.4rem 0.8rem;
+  background: var(--shell-header-bg);
+  border-radius: 8px;
+  border: 1px solid var(--shell-border);
+}
+
+@media (max-width: 900px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem 1.5rem 3rem;
+  }
+
+  .heroContent {
+    max-width: none;
+  }
+
+  .subtext {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .heroVisual {
+    flex: none;
+    width: 100%;
+    min-height: 200px;
+  }
+
+  .visualCard:nth-child(1) {
+    right: auto;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .visualCard:nth-child(2) {
+    right: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 120px;
+  }
+
+  .candidateBubble {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .trust {
+    justify-content: center;
+    text-align: center;
+  }
+}

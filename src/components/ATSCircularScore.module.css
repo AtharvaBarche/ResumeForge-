@@ -1,0 +1,115 @@
+.wrapper {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  background: var(--premium-surface);
+  border: 1px solid var(--premium-border);
+  border-radius: 8px;
+}
+
+.title {
+  margin: 0 0 0.75rem 0;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--premium-text);
+  text-align: center;
+}
+
+.circleWrap {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 0.75rem;
+}
+
+.svg {
+  width: 100%;
+  height: 100%;
+}
+
+.track {
+  stroke: var(--premium-border);
+}
+
+.progress {
+  transition: stroke-dashoffset 0.3s ease;
+}
+
+.progress_low {
+  stroke: #f85149;
+}
+
+.progress_mid {
+  stroke: #d29922;
+}
+
+.progress_high {
+  stroke: #3fb950;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.15rem;
+}
+
+.scoreValue {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--premium-text);
+  line-height: 1;
+}
+
+.label {
+  font-size: 0.65rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  line-height: 1;
+}
+
+.label_low {
+  color: #f85149;
+}
+
+.label_mid {
+  color: #d29922;
+}
+
+.label_high {
+  color: #3fb950;
+}
+
+.suggestions {
+  border-top: 1px solid var(--premium-border);
+  padding-top: 0.75rem;
+}
+
+.suggestionsTitle {
+  margin: 0 0 0.35rem 0;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--premium-muted);
+}
+
+.suggestionsList {
+  margin: 0;
+  padding-left: 1.1rem;
+  font-size: 0.8rem;
+  color: var(--premium-text);
+  line-height: 1.5;
+}
+
+.suggestionItem {
+  margin-bottom: 0.2rem;
+}
+
+.points {
+  color: var(--premium-muted);
+  font-size: 0.75rem;
+}

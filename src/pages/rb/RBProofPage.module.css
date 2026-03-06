@@ -1,0 +1,112 @@
+.wrapper {
+  flex: 1;
+  min-width: 0;
+  overflow: auto;
+  padding: 1rem 1.5rem;
+}
+
+.title {
+  margin: 0 0 0.25rem 0;
+  font-size: 1.25rem;
+  color: var(--premium-text);
+}
+
+.subtitle {
+  margin: 0 0 1.5rem 0;
+  color: var(--premium-muted);
+  font-size: 0.9rem;
+}
+
+.section {
+  margin-bottom: 1.5rem;
+}
+
+.sectionTitle {
+  margin: 0 0 0.5rem 0;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--premium-text);
+}
+
+.stepList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.stepItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.4rem 0;
+  border-bottom: 1px solid var(--premium-border);
+}
+
+.stepName {
+  color: var(--premium-text);
+}
+
+.status_pending {
+  color: var(--premium-muted);
+  font-size: 0.85rem;
+}
+
+.status_worked {
+  color: var(--premium-success);
+  font-size: 0.85rem;
+}
+
+.status_error {
+  color: var(--premium-error);
+  font-size: 0.85rem;
+}
+
+.status_screenshot {
+  color: var(--premium-accent);
+  font-size: 0.85rem;
+}
+
+.inputGroup {
+  margin-bottom: 0.75rem;
+}
+
+.label {
+  display: block;
+  font-size: 0.85rem;
+  color: var(--premium-muted);
+  margin-bottom: 0.25rem;
+}
+
+.input {
+  width: 100%;
+  max-width: 400px;
+  padding: 0.5rem 0.75rem;
+  background: var(--premium-surface);
+  border: 1px solid var(--premium-border);
+  border-radius: 6px;
+  color: var(--premium-text);
+  font-size: 0.9rem;
+}
+
+.input:focus {
+  outline: none;
+  border-color: var(--premium-accent);
+}
+
+.actions {
+  margin-top: 1.5rem;
+}
+
+.copyBtn {
+  padding: 0.5rem 1rem;
+  background: var(--premium-accent);
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.copyBtn:hover {
+  opacity: 0.9;
+}

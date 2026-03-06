@@ -1,0 +1,16 @@
+.wrapper {
+  padding: 2rem 1.5rem;
+}
+
+.title {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--premium-text);
+}
+
+.placeholder {
+  margin: 0;
+  color: var(--premium-muted);
+  font-size: 0.9rem;
+}

@@ -1,0 +1,33 @@
+.topBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 1.5rem;
+  background: var(--premium-surface);
+  border-bottom: 1px solid var(--premium-border);
+  flex-shrink: 0;
+}
+
+.left {
+  font-weight: 600;
+  color: var(--premium-text);
+}
+
+.center {
+  color: var(--premium-muted);
+  font-size: 0.9rem;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+}
+
+.badge {
+  padding: 0.25rem 0.6rem;
+  border-radius: 6px;
+  background: var(--premium-border);
+  color: var(--premium-text);
+  font-size: 0.8rem;
+  font-weight: 500;
+}
