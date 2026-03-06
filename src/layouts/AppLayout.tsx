@@ -4,7 +4,7 @@ import styles from './AppLayout.module.css'
 
 const navItems = [
   { path: '/', label: 'Home' },
-  { path: '/jobs', label: 'Find Jobs' },
+  { href: 'https://jobnotification-three.vercel.app', label: 'Find Jobs' },
   { path: '/applications', label: 'Saved' },
   { path: '/analyze', label: 'Analyze' },
   { path: '/settings', label: 'Settings' },
@@ -22,15 +22,30 @@ export function AppLayout() {
           ResumeForge
         </Link>
         <nav className={styles.nav}>
-          {navItems.map(({ path, label }) => (
-            <Link
-              key={path}
-              to={path}
-              className={location.pathname === path ? styles.navLinkActive : styles.navLink}
-            >
-              {label}
-            </Link>
-          ))}
+          {navItems.map((item) => {
+            if ('href' in item) {
+              return (
+                <a
+                  key={item.href}
+                  href={item.href}
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  className={styles.navLink}
+                >
+                  {item.label}
+                </a>
+              )
+            }
+            return (
+              <Link
+                key={item.path}
+                to={item.path}
+                className={location.pathname === item.path ? styles.navLinkActive : styles.navLink}
+              >
+                {item.label}
+              </Link>
+            )
+          })}
         </nav>
         <div className={styles.headerRight}>
           <button
